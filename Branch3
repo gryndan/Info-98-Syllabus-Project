@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Extra Credit Opportunities}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%
+\noindent\textbf{Instructions}
+\begin{center} \begin{minipage}{3.8in}
+\begin{flushleft}
+\textbf{}
+All extra credit assignments are 5 points, depending on the quality of the final work. 
+\end{flushleft}\end{minipage}\end{center}
+%%%%%%%%%%
+
+%%%%%%%%%%
+\noindent\textbf{Assignments:}
+\begin{center} \begin{minipage}{3.8in}
+\begin{flushleft}
+All written assignments are to be turned in double-spaced with 12 pt. Times New Roman font. Keep the header to two lines and the title to one line. \\
+\vskip.15in
+\hangindent=0.8cm
+\textbf{Option 1} - Go to a place with many trees and collect some leaves and try to distinguish them by their foliage and colours. Write a report about it. \\ 
+\textbf{Option 2} - Answer the prompt: If you could come up with an imaginary tree, what would it be and why. Keep your response between 1-2 pages.  \\ 
+\textbf{Option 3} - Read a nonfiction book about trees and write a book report about it. \\
+\end{flushleft}\end{minipage}\end{center}
+%%%%%%%%%%
+
+\end{document}
