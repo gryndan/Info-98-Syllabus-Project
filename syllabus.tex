@@ -1,10 +1,207 @@
-\documentclass{article}
+\documentclass[11pt, a4paper]{article}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Course Name} }
+\rhead{ \fancyplain{}{\today} }
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
 
-\title{Class Syllabus}
-\author{us}
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} 
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes 
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+\lstset{
+basicstyle=\ttfamily,                  
+keywordstyle=\color{OliveGreen},        
+commentstyle=\color{gray},             
+numbers=left,                           
+numberstyle=\tiny,                  
+stepnumber=1,                           
+numbersep=5pt,                         
+backgroundcolor=\color{lightlightgray}, 
+frame=none,                             
+tabsize=2,                              
+captionpos=t,                           
+breaklines=true,                        
+breakatwhitespace=false,               
+showspaces=false,                       
+showtabs=false,                        
+columns=flexible,                      
+morekeywords={__global__, __device__}, 
+}
 
 \begin{document}
-\maketitle
+\begin{center}
+{\Large \textsc{Introduction to Trees}}
+\end{center}
+\begin{center}
+Spring 2019
+\end{center}
 
-\end{document}
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Instructor:} & Professor Tree & & &  & \textbf{Time:} & Monday 15:00 -- 17:00 \\
+\textbf{Email:} &  \href{mailto:tree101@berkeley.edu}{tree101@berkeley.edu} & & & & \textbf{Place:} & 107 Dwinelle
+\end{tabular}
+\end{minipage}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Course Pages:} \begin{enumerate}
+\item \url{http://www.tree101decal.berkeley.edu}
+\end{enumerate}
+
+\vskip.15in
+\noindent\textbf{Office Hours:} Tuesday 9:00 - 10:00 or by appointment
+
+\vskip.15in
+\noindent\textbf{Main References:} 
+This is a  restricted list of various interesting and useful books that will be touched during the course. It is helpful for you to reference them throughout our study of the subject.
+\begin{itemize}
+\item James P. Adams, {\textit{History of Trees}}, Stanley, 2008.
+\item Richard J. Knight, Kevin Qin, and Stephen Zeller, {\textit{Models and Methods in Plant and Tree Analysis}}, Cambridge University Press, 2002.
+
+\end{itemize} 
+
+\vskip.15in
+\noindent\textbf{Objectives:}  This course is  primarily designed for an introductory study in xylology. Although it may be helpful, no prior knowledge of the subject is required. Just bring a passion and enthusiasm for learning about trees. 
+
+\vskip.15in
+\noindent\textbf{Prerequisites:}
+An introductory understanding of biology and genetics is assumed. 
+
+
+\vspace*{.15in}
+
+\vspace*{.15in}
+\noindent\textbf{Grading Policy:} Project 1 (History of Trees) (25\%),  Project 2 (Types of Trees) (25\%), Project 3 (Humans and Trees) (25\%), Attendance/Participation (25\%). 
+
+\vskip.15in
+\noindent\textbf{Project Due Dates:}
+\begin{center} \begin{minipage}{3.8in}
+\begin{flushleft}
+February 17, 2019  \\
+March 22, 2019  \\
+April 19, 2019  \\
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+\vskip.15in
+\noindent\textbf{Course Policy:}  
+\begin{itemize}
+\item Please sign up for Piazza and make an account at treeresearch.org. That is where we will read current news relating to trees. After confirming your enrollment for the course, then you will be able to see the course page.
+
+\end{itemize}
+
+\vskip.15in
+\noindent\textbf{Class Policy:}  
+\begin{itemize}
+\item Regular attendance is essential and expected. Attendance (or lack of attendance) will affect your grade, so come to class!
+\end{itemize}
+
+\vskip.15in
+\noindent\textbf{Academic Honesty:}   Lack of knowledge of the academic honesty policy is not a reasonable explanation for a violation. Cheating will result in no credit for the project and may result in more consequences subject to university guidelines. 
+
+\noindent \textbf{Tentative Course Outline:} \\
+\\
+\SetDate[02/04/2018]
+\week{Week 01} Introduction
+\begin{itemize}
+\item Introduction to Trees
+\end{itemize}
+
+\week{Week 02} General Protocols
+\begin{itemize}
+\item Sampling, field and laboratory work protocols
+\end{itemize}
+
+\week{Week 03} Properties of Trees
+\begin{itemize}
+\item Investigation methodology of properties and structure of felled and/or standing trees
+\end{itemize}
+
+\week{Week 04} Work on Projects
+\begin{itemize}
+\item Project work time
+\end{itemize}
+
+\week{Week 05} Techniques and applications in wood science
+\begin{itemize}
+\item Nondestructive methods for wood traits analysis
+\end{itemize}
+
+\week{Week 06} Wood formation
+\begin{itemize}
+\item Influence and control factors in wood formation
+\end{itemize}
+
+\week{Week 07} Trees amongst the environment
+\begin{itemize}
+\item Annual and seasonal rhythm eco-physiology regarding the wood architecture construction
+\end{itemize}
+
+\week{Week 08} Urban Forestry
+\begin{itemize}
+\item Abiotic and biotic factors that condition the forest production
+\end{itemize}
+
+\week{Week 9} Work on Projects
+\begin{itemize}
+\item Project work time
+\end{itemize}
+
+\week{Week 10} Trees in urban areas
+\begin{itemize}
+\item Urban green areas characterization and design
+\end{itemize}
+
+\week{Week 11} Forestry parks
+\begin{itemize}
+\item .Establishment and organization of recreational forests
+\end{itemize}
+
+\week{Week 12} Trees and biology
+\begin{itemize}
+\item Genetic principles and their application in forest trees species
+\end{itemize}
+
+\week{Week 13} Work on Projects
+\begin{itemize}
+\item Project work time
+\end{itemize}
+
+\week{Week 14} Closing
+\begin{itemize}
+\item Final remarks on trees and our connection to them, as well as how we can enjoy their presence! 
+\end{itemize}
+
+\end{document} 
